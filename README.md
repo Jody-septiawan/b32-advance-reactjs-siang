@@ -1,3 +1,4 @@
-# useHistory template
+# URL parameters template
 
-- implementation useHistory in Home page
+- This is template used to practice implementation about handling parameters in react
+- Focus on DetailUser.js and App.js
