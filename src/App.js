@@ -6,13 +6,13 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
+import DetailUser from "./pages/DetailUser";
 // import component here
 
 function App() {
   return (
     <Router>
       <div>
-        {/* Setup navigation element */}
         <nav>
           <ul>
             <li>
@@ -27,14 +27,10 @@ function App() {
           </ul>
         </nav>
       </div>
-      {/* define Route and component that will 
-      render if the URL match by using Switch */}
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/profile" component={Profile} />
         <Route exact path="/signin" component={SignIn} />
-        {/* define new route */}
+        {/* change route for page about, profile, and user:id to private route */}
       </Switch>
     </Router>
   );

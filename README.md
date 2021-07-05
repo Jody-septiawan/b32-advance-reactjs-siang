@@ -1,4 +1,4 @@
-# URL parameters template
+# Private Route template
 
-- This is template used to practice implementation about handling parameters in react
-- Focus on DetailUser.js and App.js
+- This is template used to practice implementation about private route in react
+- Focus on PrivateRoute.js and App.js
