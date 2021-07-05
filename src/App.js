@@ -1,13 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// import necessary object from react-router-dom
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
-// import our "pages" component
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
+// import component here
 
 function App() {
   return (
@@ -35,6 +34,7 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/signin" component={SignIn} />
+        {/* define new route */}
       </Switch>
     </Router>
   );
