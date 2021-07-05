@@ -1,6 +1,14 @@
+// import necessary react-bootstrap component 
 import { Container } from "react-bootstrap";
 
+// import hooks from react-router-dom here
+
 function Home() {
+  
+  // call that hooks here and store to variable
+
+  // create function here for handle push to another pages
+
   return (
     <Container className="text-center">
       <p className="h1">Home</p>
@@ -14,6 +22,7 @@ function Home() {
         parturient montes, nascetur ridiculus mus. Donec et maximus tellus, sit
         amet hendrerit augue.
       </p>
+      {/* code element here */}
     </Container>
   );
 }
