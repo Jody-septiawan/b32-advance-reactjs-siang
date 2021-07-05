@@ -1,1 +1,1 @@
-# React bootstrap template
+# Navigation and Routing template
