@@ -1,5 +1,7 @@
 import { Container } from "react-bootstrap";
 
+// import component
+
 function About() {
   return (
     <Container className="text-center">
@@ -14,6 +16,7 @@ function About() {
         quis nibh gravida, ut hendrerit felis fringilla. Proin at aliquam
         tortor.
       </p>
+      {/* code here */}
     </Container>
   );
 }
