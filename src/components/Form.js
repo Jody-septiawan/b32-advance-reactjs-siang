@@ -1,3 +1,5 @@
+// import React Bootstrap components here
+
 // import css modules
 import cssModules from "./Form.module.css";
 
@@ -50,6 +52,16 @@ function Form() {
             placeholder="Input email"
             className={cssModules.formInput}
           />
+        </div>
+        <div className="form-group">
+          <label htmlFor="gender" className="form-label">
+            Gender
+          </label>
+          <select id="gender" className="form-select" defaultValue="Choose...">
+            <option>Choose...</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
         </div>
         {/* code here */}
       </form>

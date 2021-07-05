@@ -1,5 +1,4 @@
-// import styles here
-
+import './styles/styles.css'
 // import components here
 
 function App() {
