@@ -1,4 +1,5 @@
-# Prop Types template
+# Typechecking with Prop Types
 
-- This is template used to practice implementation about component property type checking in react
-- Focus on DetailAbout.js and About.js
+As your app grows, you can catch a lot of bugs with typechecking. React has some built-in typechecking abilities.  
+To run typechecking on the props for a component, you can assign the special propTypes property and combine them with prop-types library to specify what type the value will received by props.  
+Reference: [Typechecking With Prop-Types](https://reactjs.org/docs/typechecking-with-proptypes.html).
