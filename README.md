@@ -1,4 +1,6 @@
-# Global css template
+# Global css
 
-- Create styles directory inside src and create file name styles.css
-- Import styles.css in App.js
+This branch is the result of practice to apply global css stylesheet to component.\
+You can apply global css stylesheet by import it in the root component\
+and child component can apply the style without import again.\
+Reference: [Create React App](https://create-react-app.dev/docs/adding-a-stylesheet).
