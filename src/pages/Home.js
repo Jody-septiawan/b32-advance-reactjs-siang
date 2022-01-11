@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 // import hooks from react-router-dom here
 
 function Home() {
-  
+
   // call that hooks here and store to variable
 
   // create function here for handle push to another pages
