@@ -11,7 +11,7 @@ function App() {
       <div>
         {/* Setup navigation here */}
       </div>
-      {/* code <Switch> and <Route> below, according to path and component */}
+      {/* code <Routes> and <Route> below, according to path and component */}
     </>
   );
 }
