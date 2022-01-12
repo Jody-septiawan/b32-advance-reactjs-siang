@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -28,13 +28,16 @@ function App() {
           </ul>
         </nav>
       </div>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/signin" component={SignIn} />
-        <PrivateRoute exact path="/about" component={About} />
-        <PrivateRoute exact path="/profile" component={Profile} />
-        <PrivateRoute exact path="/users/:id" component={DetailUser} />
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/signin" element={<SignIn />} />
+        {/* protect this routes with <PrivateRoute> */}
+        <Route exact path="/" element={<PrivateRoute />}>
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/profile" element={<Profile />} />
+          <Route exact path="/users/:id" element={<DetailUser />} />
+        </Route>
+      </Routes>
     </Router>
   );
 }

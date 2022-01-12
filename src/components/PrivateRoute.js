@@ -1,19 +1,13 @@
-import { Redirect, Route } from "react-router-dom";
+// import necessary object from rrd
+import { Outlet, Navigate } from "react-router-dom";
 
-const PrivateRoute = ({ component: Component, ...rest }) => {
-  // assume that user is not login yet
-  const isSignin = false;
+const PrivateRoute = ({ element: Component, ...rest }) => {
+    // assume that user is not login yet
+    const isSignin = false;
 
-  return (
-    <>
-      <Route
-        {...rest}
-        render={(props) =>
-          isSignin ? <Component {...props} /> : <Redirect to="/signin" />
-        }
-      />
-    </>
-  );
+    return (
+        isSignin ? <Outlet /> : <Navigate to="/signin" />
+    );
 };
 
 export default PrivateRoute;
