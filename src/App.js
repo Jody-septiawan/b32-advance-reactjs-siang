@@ -1,12 +1,12 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Profile from "./pages/Profile";
-import SignIn from "./pages/SignIn";
-// import component here
+import Home from './pages/Home';
+import About from './pages/About';
+import Profile from './pages/Profile';
+import SignIn from './pages/SignIn';
+import DetailUser from './pages/DetailUser';
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/profile" element={<Profile />} />
         <Route exact path="/signin" element={<SignIn />} />
-        {/* define new route */}
+        <Route exact path="/user/:id" element={<DetailUser />} />
       </Routes>
     </Router>
   );
