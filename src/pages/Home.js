@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Container } from 'react-bootstrap';
 
 function Home() {
   return (
@@ -14,6 +14,9 @@ function Home() {
         parturient montes, nascetur ridiculus mus. Donec et maximus tellus, sit
         amet hendrerit augue.
       </p>
+      <a href="https://getbootstrap.com/docs/5.1/examples/" target="_blank">
+        Bootstrap
+      </a>
     </Container>
   );
 }
