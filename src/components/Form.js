@@ -1,34 +1,34 @@
 // import React Bootstrap components here
+import { Form, Col, Button } from 'react-bootstrap';
 
 // import css modules
-import cssModules from "./Form.module.css";
+import cssModules from './Form.module.css';
 
 const styles = {
   form: {
-    margin: "16px 20% 0",
+    margin: '16px 20% 0',
   },
   formGroup: {
-    marginBottom: "16px",
+    marginBottom: '16px',
   },
   formLabel: {
-    marginBottom: "8px",
-    display: "inline-block",
+    marginBottom: '8px',
+    display: 'inline-block',
   },
   formInput: {
-    display: "block",
-    width: "100%",
-    padding: ".375rem .75rem",
-    fontSize: "1rem",
+    display: 'block',
+    width: '100%',
+    padding: '.375rem .75rem',
+    fontSize: '1rem',
     lineHeight: 1.5,
-    color: "#212529",
-    backgroundColor: "#fff",
-    border: "1px solid #ced4da",
-    borderRadius: ".25rem",
+    color: '#212529',
+    backgroundColor: '#fff',
+    border: '1px solid #ced4da',
+    borderRadius: '.25rem',
   },
 };
 
-
-function Form() {
+function FormComponent() {
   return (
     <div>
       <form style={styles.form}>
@@ -63,10 +63,23 @@ function Form() {
             <option>Female</option>
           </select>
         </div>
-        {/* code here */}
+        <Form.Row>
+          <Form.Group as={Col} md="6">
+            <Form.Label>City</Form.Label>
+            <Form.Control type="text" placeholder="City" />
+          </Form.Group>
+          <Form.Group as={Col} md="6">
+            <Form.Label>State</Form.Label>
+            <Form.Control type="text" placeholder="State" />
+          </Form.Group>
+        </Form.Row>
+        <Button variant="success" className="w-100 mt-5">
+          Submit
+        </Button>
+        <button className="btn btn-danger w-100 mt-3">Cancel</button>
       </form>
     </div>
-  )
+  );
 }
 
-export default Form
+export default FormComponent;
